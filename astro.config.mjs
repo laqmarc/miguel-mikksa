@@ -5,7 +5,8 @@ export default defineConfig({
     buildOptions: {
         // Set base to the correct value for your repository
         site: 'https://laqmarc.github.io/',
-    base: '/miguel-mikksa/'
+        base: '/miguel-mikksa/',
       }
+    
 
 });
