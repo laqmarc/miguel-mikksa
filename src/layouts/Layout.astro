@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="description" content="Astro description">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<meta name="generator" content={Astro.generator} />
+	<title>Miguel Carrión</title>
+</head>
+ 
+<body>
+	<slot />
+</body>
+
+</html>
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+
+	html {
+		font-family: 'Roboto', sans-serif;
+		background-color: #fff;
+	}
+
+	code {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	body{
+		font-family: 'Roboto', sans-serif;
+		background-color: #fff;
+		margin: 0px;
+	}
+	.container{
+    max-width: 1400px;
+	margin: 0 auto;
+		padding: 0px 15px;
+}
+.flex{
+	display: flex;
+        justify-content: space-between;
+        align-items: center; 
+}
+.col-2{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap:30px;
+}
+img{
+	max-width: 100%;
+}
+.no-gap{
+	gap:0px;
+}
+.center{
+	text-align: center;
+}
+</style>
